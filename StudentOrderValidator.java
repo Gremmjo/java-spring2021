@@ -16,25 +16,19 @@ public class StudentOrderValidator {
     }
 
     static AnswerCityRegister checkCityRegister(StudentOrder so){
-        System.out.println("City Register is Running");
-        AnswerCityRegister ans = new AnswerCityRegister();
-        ans.success = false;
-        return ans;
+        return CityRegisterValidator.checkCityRegister(so);
     }
 
     static AnswerWedding chekWedding(StudentOrder so){
-        System.out.println("Wedding running ");
-        return new AnswerWedding();
+       return WeddingValidator.chekWedding(so);
     }
 
     static AnswerChildren chekChildren(StudentOrder so){
-        System.out.println("Children Check is running");
-        return new AnswerChildren();
+      return  ChildrenValidator.chekChildren(so);
     }
 
     static AnswerStudent checkStudent(StudentOrder so){
-        System.out.println("Student Checking");
-        return new AnswerStudent();
+       return StudentValidator.checkStudent(so);
     }
 
     static void sendMail(StudentOrder so){
