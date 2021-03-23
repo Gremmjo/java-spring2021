@@ -1,4 +1,4 @@
-package app1;
+package com.course.javaProj;
 
 public class FinanceStudentOrder {
 }
