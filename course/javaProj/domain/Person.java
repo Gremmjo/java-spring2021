@@ -5,13 +5,60 @@ import java.time.LocalDate;
 
 public class Person {
 
-    private String surName;
-    private String givenName;
+    protected String surName;
+    protected String givenName;
     private String patronymicName;
     private LocalDate dateOfBirth;
-    private String postCode;
-    private String street;
-    private String building;
-    private String extention;
-    private String appartment;
+    private Address address;
+
+
+
+
+    public String getPersonString(){
+        return surName + " " + givenName;
+    }
+
+
+    public Address getAddress() {
+        return address;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
+    }
+
+    public String getSurName() {
+        return surName;
+    }
+
+    public void setSurName(String surName) {
+        this.surName = surName;
+    }
+
+    public String getGivenName() {
+        return givenName;
+    }
+
+    public void setGivenName(String givenName) {
+        this.givenName = givenName;
+    }
+
+    public String getPatronymicName() {
+        return patronymicName;
+    }
+
+    public void setPatronymicName(String patronymicName) {
+        this.patronymicName = patronymicName;
+    }
+
+    public LocalDate getDateOfBirth() {
+        return dateOfBirth;
+    }
+
+    public void setDateOfBirth(LocalDate dateOfBirth) {
+        this.dateOfBirth = dateOfBirth;
+    }
+
+
 }
+
